@@ -1,0 +1,152 @@
+/* NewsCard.css */
+
+/* Style for the card container */
+.card-container {
+    border: 1px solid #ddd; /* Add border */
+    border-radius: 8px; /* Add border radius */
+    overflow: hidden; /* Hide overflow content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+  }
+  
+  /* Add hover effect */
+  .card-container:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+  }
+  
+  /* Style for the card image */
+  .card-image {
+    height: 400px; /* Set the height of the image */
+    object-fit: cover; /* Cover the entire container */
+  }
+  
+  /* Style for the card title */
+  .title-news {
+    font-size: 18px; /* Set the font size */
+    margin-bottom: 10px; /* Add spacing below the title */
+  }
+  
+  /* Style for the card description */
+  .description-news {
+    font-size: 14px; /* Set the font size */
+    color: var(--text-color);
+    margin-bottom: 15px; /* Add spacing below the description */
+  }
+  
+  /* Style for the news section */
+.news-section {
+  margin-top: 40px; /* Add top margin */
+}
+
+/* Style for the news section title */
+.news-section-title {
+  font-size: 24px; /* Set the font size */
+  font-weight: bold; /* Set font weight */
+  margin-bottom: 20px; /* Add bottom margin */
+}
+
+/* Style for the news cards container */
+/* Dashboard.css */
+
+/* Style for the news cards container */
+.news-cards {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Align items with equal space between */
+  flex-wrap: wrap; /* Wrap items to next line if needed */
+}
+
+/* Style for each news card */
+.news-card {
+  width: calc(33.33% - 20px); /* Set width for each card with margin */
+  margin-bottom: 20px; /* Add bottom margin */
+}
+
+/* Style for the news card title */
+.news-card-title {
+  font-size: 18px; /* Set the font size */
+  font-weight: bold; /* Set font weight */
+  margin-bottom: 10px; /* Add bottom margin */
+}
+
+/* Style for the news card description */
+.news-card-description {
+  font-size: 14px; /* Set the font size */
+  color: #666; /* Set the text color */
+}
+
+/* NewsCard.css and Dashboard.css adjustments for mobile responsiveness */
+
+/* Existing styles ... */
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  /* Adjust news cards container to stack cards vertically */
+  .news-cards {
+    justify-content: center; /* Center cards vertically */
+    padding: 0 0px; /* Add padding to the sides of the container */
+  }
+
+  /* Adjust news card width and margin to add space around */
+  .news-card {
+    width: calc(100% - 40px); /* Adjust width to allow for horizontal margins */
+    margin: 0 10px 20px; /* Add margin to the left and right, and more space at the bottom */
+  }
+
+  /* Scale down card image height */
+  .card-image {
+    height: 250px; /* Adjust height for mobile */
+  }
+
+  /* Optionally adjust font sizes for better readability */
+  .news-title, .news-card-title {
+    font-size: 16px; /* Slightly reduce font size */
+  }
+
+  .description-news, .news-card-description {
+    font-size: 13px; /* Slightly reduce font size */
+  }
+
+  .news-section-title {
+    font-size: 20px; /* Adjust section title font size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjust padding and possibly other styles within each card for better spacing and readability */
+  .card-container {
+    margin: 10px; /* Add margin around each card for spacing */
+    padding: 10px; /* Optional: add padding inside the card if needed for internal spacing */
+    height: auto; /* Adjust height to be auto for dynamic content adjustment */
+  }
+
+  /* Adjust the card image height for smaller screens */
+  .card-image {
+    height: 200px; /* Adjust height for mobile */
+  }
+
+  /* Adjust font sizes within the card for better readability on small screens */
+  .title-news, .news-card-title {
+    font-size: 16px; /* Adjust font size for the title */
+  }
+
+  .description-news, .news-card-description {
+    font-size: 12px; /* Adjust font size for the description */
+  }
+
+  /* Adjust the news section title for better readability */
+  .news-section-title {
+    font-size: 20px; /* Adjust section title font size */
+  }
+
+  /* Since cards are individually spaced, adjust .news-cards if needed */
+  .news-cards {
+    padding: 0; /* Remove padding to rely on card-container margins */
+  }
+
+  /* Adjust news card width for better utilization of space */
+  .news-card {
+    width: 100%; /* Cards take full width of the container */
+    margin-bottom: 20px; /* Keep bottom margin for vertical spacing between cards */
+  }
+}
+

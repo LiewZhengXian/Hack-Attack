@@ -1,0 +1,23 @@
+/* InfoCard styles */
+.info-card {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px; /* Space between cards */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .info-card-title {
+    font-size: 2em;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+  }
+  
+  
+  .info-card-value {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--background-color);
+  }
+  

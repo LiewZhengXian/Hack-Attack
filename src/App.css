@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+:root {
+  --primary-color: #000758;
+  --hover-color: #000D9E;
+  --secondary-color: #40E0D0;
+  --secondary-hover-color: #31AFA3;
+  --background-color: #F4F4F4;
+  --input: #DADADA;
+  --link: #E67E22;
+  --link-hover: #B2621C;
+  --link-dark: #B2621C;
+  --link-dark-hover: #E67E22;
+  --text-color: #333333;
+  --warning-color: #FF6B6B;
+  --warning-hover-color: #CB5353;
+  --edit-color: #93f9b8;
+  --edit-hover-color: #65AF80;
+  --page-color: #666;
+  --page-hover-color: #333;
+  --breadcrumb: #DADADA;
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* Apply Inter font family to the entire document */
+  font-size: 16px; /* Set base font size */
+  line-height: 1.5; /* Set base line height */
+  color: var(--text-color);
+}
+
+.main {
+  margin: 20px auto; /* Adds 40px margin on top and bottom, centers horizontally */
+  padding: 40px; /* Keeps padding as is, for inside space */
+}
+
+.container {
+  max-width: 800px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.grid-row {
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 2.5em; /* Adjust font size for h1 */
+  line-height: 1.2; /* Adjust line height for h1 */
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 2em; /* Adjust font size for h2 */
+  line-height: 1.3; /* Adjust line height for h2 */
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+h3 {
+  font-size: 1.5em; /* Adjust font size for h3 */
+  line-height: 1.4; /* Adjust line height for h3 */
+}
+
+h4 {
+  font-size: 1.2em; /* Adjust font size for h4 */
+  line-height: 1.5; /* Adjust line height for h4 */
+}
+
+h5 {
+  font-size: 1em; /* Adjust font size for h5 */
+  line-height: 1.6; /* Adjust line height for h5 */
+}
+
+h6 {
+  font-size: 0.8em; /* Adjust font size for h6 */
+  line-height: 1.7; /* Adjust line height for h6 */
+}
+
+p {
+  font-size: 1em; /* Adjust font size for paragraphs */
+  line-height: 1.6; /* Adjust line height for paragraphs */
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transition for smooth color change and transform */
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--link-hover);
+  transform: scale(1.05); /* Apply scale transform for zoom effect */
+}
+
+.dark-link {
+  text-decoration: none;
+  color: var(--link-dark);
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transition for smooth color change and transform */
+}
+
+.dark-link:hover {
+  text-decoration: none;
+  color: var(--link-dark-hover);
+  transform: scale(1.05); /* Apply scale transform for zoom effect */
+}
+
+
+.primary-button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 20px; /* Matched with inputs for consistency */
+  border: 2px solid var(--primary-color);
+  padding: 12px 24px; /* Adjusted padding for bigger height */
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transition for smooth color change and transform */
+}
+
+.primary-button:hover {
+  background-color: var(--hover-color);
+  color: var(--secondary-color);
+  transform: scale(1.05); /* Apply scale transform for zoom effect */
+}
+
+.secondary-button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 5px; /* Matched with inputs for consistency */
+  border: 2px solid var(--primary-color);
+  padding: 12px 24px; /* Adjusted padding for bigger height */
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transition for smooth color change and transform */
+}
+
+.secondary-button:hover {
+  background-color: var(--secondary-hover-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  transform: scale(1.05); /* Apply scale transform for zoom effect */
+}
+
+.btn-danger {
+  background-color: var(--warning-color);
+  color: var(--primary-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px; /* Add transition for smooth color change and transform */
+}
+
+.btn-danger:hover {
+  background-color: var(--warning-hover-color);
+  color: var(--background-color);
+  transform: scale(1.05); /* Apply scale transform for zoom effect */
+}
+
+.edit {
+  background-color: var(--edit-color);
+  color: var(--primary-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px; /* Add transition for smooth color change and transform */
+}
+
+.edit:hover {
+  background-color: var(--edit-hover-color);
+  transform: scale(1.05); /* Apply scale transform for zoom effect */
+}
+
+.excel-button {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px; /* Add transition for smooth color change and transform */
+}
+
+.excel-button:hover {
+  background-color: var(--background-color);
+  color: var(--hover-color);
+  transform: scale(1.05); /* Apply scale transform for zoom effect */
+}
+
+.page {
+  background-color: var(--page-color);
+  color: var(--background-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+}
+
+.page:hover {
+  background-color: var(--page-hover-color);
+  transform: scale(1.05);
+}
+
+.page:disabled {
+  background-color: var(--background-color); /* Light grey or any color for disabled state */
+  color: var(--text-color); /* Darker grey or any color that indicates non-interactivity */
+  border-color: var(--text-color); /* Optional: if you want to change border color for disabled state */
+  cursor: not-allowed; /* Changes the cursor to indicate the button is not clickable */
+  transform: none; /* Removes any transform effects to further indicate non-interactivity */
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 5px; /* Adjust border-radius as needed */
+  border-color: var(--primary-color); /* Change border color to primary color */
+}
+
+
+.total {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-size: 2em;
+}
+
+.list-group-item {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: flex-start; /* Align items to the start of the container */
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  border-color: var(--primary-color);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row; /* Ensures buttons are in a horizontal line */
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 5px; /* Aligns buttons to the start; adjust as needed */
+}
+
+
+.icon-left {
+  margin-right: 5px; /* Adds space between the icon and the text */
+}
+
+.icon-right {
+  margin-left: 5px; /* Adds space between the icon and the text */
+}
+
+.card-title {
+  color: var(--secondary-color);
+}
+
+.card-text {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .main {
+    margin: 10px auto; /* Reduced margin */
+    padding: 20px; /* Reduced padding */
+  }
+
+  .container {
+    margin-top: 10px;
+    padding: 10px; /* Reduced padding */
+  }
+
+  .grid-row {
+    margin: 10px 0; /* Reduced margin */
+  }
+
+  h1 {
+    font-size: 2em; /* Reduced font size */
+  }
+
+  h2 {
+    font-size: 1.75em; /* Reduced font size */
+  }
+
+  h3 {
+    font-size: 1.25em; /* Reduced font size */
+  }
+
+  h4, h5, h6 {
+    font-size: 1em; /* Uniform font size for smaller headings */
+  }
+
+  p {
+    font-size: 0.9em; /* Reduced font size */
+  }
+
+  .primary-button, .secondary-button, .btn-danger, .edit, .excel-button, .page {
+    padding: 10px 20px; /* Adjusted padding */
+    border-radius: 15px; /* Adjusted border-radius */
+  }
+
+  .list-group-item {
+    padding: 8px 16px; /* Reduced padding */
+  }
+
+
+}

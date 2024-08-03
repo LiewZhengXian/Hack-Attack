@@ -1,0 +1,154 @@
+
+/* SignIn.css */
+.signin {
+    background-image: linear-gradient(to right, var(--primary-color), var(--hover-color));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .signin-container {
+    padding: 2rem;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .google-login {
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 10px; /* Adjust based on actual padding of input */
+    color: var(--primary-color);
+    z-index: 10;
+    margin-right: 5px;
+  }
+  
+  .form-control {
+    padding-left: 30px; /* Adjust so text does not overlap the icon */
+    height: 48px; /* Increase the height as needed */
+    padding-top: 10px; /* Adjust top padding to vertically center the text */
+    padding-bottom: 10px; /* Adjust bottom padding to vertically center the text */
+    border-radius: 20px !important; /* Keep inputs rounded */
+  }
+  
+  
+  /* Style adjustments for buttons */
+  .btn-fullwidth, .btn-login {
+    width: 100%;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px; /* Matched with inputs for consistency */
+    border: 2px solid var(--primary-color);
+    padding: 12px 24px; /* Adjusted padding for bigger height */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transition for smooth color change and transform */
+  }
+  
+  .btn-fullwidth {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+
+  .btn-fullwidth:hover {
+    background-color: var(--hover-color);
+    color: var(--secondary-color);
+    transform: scale(1.05); /* Apply scale transform for zoom effect */
+  }
+
+/* Style adjustments for buttons */
+.btn-login {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  /* Your existing styles */
+}
+
+.btn-login:hover {
+  background-color: var(--secondary-hover-color);
+  transform: scale(1.05); /* Apply scale transform for zoom effect */
+  /* Your existing styles */
+}
+
+/* Adjustments for FontAwesome icon movement on hover */
+.btn-login:hover svg {
+  transform: translateX(5px);
+  transition: transform 0.3s ease;
+}
+
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .text-center {
+    margin-top: 2rem;
+  }
+  
+  .forgot-password {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .text-danger {
+    color: #dc3545;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    padding-left: 0.75rem;
+  }
+  
+  .bold-text {
+    font-weight: bold;
+  }
+  
+  .invalid-feedback {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 0.25rem;
+  }
+  
+  .toggle-password {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+  
+  .btn-login:disabled {
+    background-color: #cccccc;
+    border-color: #cccccc;
+  }
+  
+
+
+  @media (max-width: 768px) {
+    .signin-container {
+      padding: 1rem;
+      margin: 0 20px;
+    }
+  }
+  

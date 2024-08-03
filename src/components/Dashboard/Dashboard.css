@@ -1,0 +1,23 @@
+.main-content {
+    padding: 20px;
+  }
+
+
+/* Media query for iPad screens (between 577px and 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+
+  .main-content {
+    padding: 10px;
+  }
+  
+}
+
+
+@media (max-width: 576px) {
+    
+    .main-content {
+      padding: 10px;
+    }
+    
+  }
+  
